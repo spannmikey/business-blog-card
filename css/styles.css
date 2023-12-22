@@ -1,0 +1,95 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato&family=Poppins&display=swap');
+*,
+*::before,
+*::after {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+:root {
+	--light-white: #f2f5f9;
+	--white: #fff;
+	--navy: #111729;
+	--blue: #677489;
+}
+
+body {
+	background-color: var(--light-white);
+	font-family: 'Lato', 'Poppins', sans-serif;
+}
+
+.main {
+	/* position */
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	/* sizing */
+	height: 100vh;
+}
+
+.card-container {
+	border-radius: 0.8em;
+	width: 418px;
+	background-color: var(--white);
+	position: relative;
+}
+
+.card-container img {
+	width: 100%;
+	height: auto;
+	border-top-right-radius: 0.8em;
+	border-top-left-radius: 0.8em;
+}
+
+.divider {
+	height: 2px;
+	background-color: var(--light-white);
+}
+
+.card-footer {
+	display: flex;
+	gap: 1rem;
+	padding: 20px 0;
+}
+
+.card-footer img {
+	border-radius: 99999px;
+	width: 35px;
+	margin-left: 20px;
+	outline: 1px solid var(--blue);
+	outline-offset: 2px;
+	object-fit: cover;
+}
+
+h1,
+.desc {
+	padding: 0 20px;
+}
+
+.title {
+	font-family: 'Poppins';
+	font-size: 1.5rem;
+	margin-top: 8px;
+}
+
+.desc {
+	margin-top: 16px;
+	margin-bottom: 16px;
+	font-family: 'Lato';
+	font-size: 1rem;
+	font-weight: 500;
+	color: var(--blue);
+	line-height: 1.4;
+}
+
+.job {
+	font-family: 'Lato';
+	font-size: 1rem;
+	color: var(--blue);
+}
+
+.overlay {
+	position: absolute;
+	top: 450px;
+}
